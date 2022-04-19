@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" media="screen and (min-width: 800px)" href="../css/desktop.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <link rel="shortcut icon" href="../sources/img/icon--math-min.png">
+    <link rel="stylesheet" href="../css/estad.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Estadistic caculator | Media</title>
+</head>
+
+<body>
+    <header class="header">
+        <div id="sidebar" class="header__side-bar">
+            <div class="side-bar__toggle-btn">
+                <span class="side-bar__toggle-btn--span">&#9776</span>
+            </div>
+            <ul class="side-bar_listas">
+                <li class="listas_li"><a href="../index.html"><img src="../sources/img/icon--math-min.png" alt="" class="listas_li--img"></a></li>
+                <li class="listas_li"><a class="listas__li--a" href="../index.html">Main page</a>
+                </li>
+                <li class="listas_li"><a class="listas__li--a" href="./media.html">Estadistic Calculator</a>
+                </li>
+                <li class="listas_li"><a class="listas__li--a" href="./mediana_armonica.html">harmonic median</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__container--logo">
+            <img class="header--img" src="../sources/img/mat--icon-min.png" alt="">
+            <h1 class="header--h1">
+                Estadistic <br> Calculator
+            </h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="main__contenedor">
+            <h1 class="main__contenedor--title">
+                Calculadora de estadistica
+            </h1>
+            <div class="contenedor__padre">
+                <form action="">
+                    <label for="">
+                        Ingresa los datos separados por una coma y sin espacios
+                    </label>
+                    <input class="ingrese_valores" type="text" placeholder="Ej: 1,2,3,2,5,74,3" id="inputDatos">
+                </form>
+                <details class="etqiueta_lista">
+                    <summary class="lista__cabezera">
+                        ¿Que quieres calcular?
+                    </summary>
+                    <ul class="min__lista">
+                        <li class="lista--cerrar"><button type="button" onclick="calcularMedia()">Media</button></li>
+                        <li class="lista--cerrar"><button type="button" onclick="calcularModa()">Moda</button></li>
+                        <li class="lista--cerrar"><button type="button" onclick="calcularMediana()">Mediana</button></li>
+                    </ul>
+                </details>
+                <p>Esta es tu respuesta</p>
+                <input type="text" readonly id="inputRespuesta">
+            </div>
+        </div>
+
+
+    </main>
+    <script src="../js/side_bar.js"></script>
+    <script src="../js/estadis.js"></script>
+</body>
+
+</html>
