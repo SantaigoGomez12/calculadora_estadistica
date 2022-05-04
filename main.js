@@ -68,3 +68,24 @@ function calcular_moda(arr){
     return arr.sort((a,b) => arr.filter(v => v===a).length - arr.filter(v => v===b).length).pop();
 }
 */
+
+// Mediana armonica
+function calcularMediaArmonica() {
+    let inputDatos = document.getElementById("inputDatos");
+    let valores_string = inputDatos.value;
+    let valores_array = (valores_string.split(","));
+    let moda = calcular_media_armonica(valores_array);
+    document.getElementById("inputRespuestaArmon").value = `Este es tu moda ${moda}`;
+
+}
+function calcular_media_armonica(velocidades) {
+    velocidades = velocidades.sort((a, b) => Number(a) - Number(b));
+    let valores_divididos = [];
+    for (let i = 0; i < velocidades.length; i++) {
+        let finales = 1 / velocidades[i];
+        valores_divididos.push(parseFloat(finales.toFixed(4)))
+    }
+    let valores_sumados = valores_divididos.reduce((a, b) => a + b);
+    let mediana_armonica = (velocidades.length / (valores_sumados)).toFixed(2);
+    return `${mediana_armonica} Km/h`;
+}

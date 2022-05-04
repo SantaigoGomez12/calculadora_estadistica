@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estadistic caculator | Media - Moda - Mediana</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <div class="main__contenedor">
+            <h1 class="main__contenedor--title">
+                Calculadora de Media, Mediana y Moda
+            </h1>
+            <div class="contenedor__padre">
+                <form action="">
+                    <label for="">
+                        Ingresa los datos separados por una coma y sin espacios
+                    </label>
+                    <input class="ingrese_valores" type="text" placeholder="Ej: 1,2,3,2,5,74,3" id="inputDatos">
+                </form>
+                <h3 class="lista__cabezera">
+                    ¿Que quieres calcular?
+                </h3>
+                <button type="button" onclick="calcularMedia()">Media</button>
+                <button type="button" onclick="calcularModa()">Moda</button>
+                <button type="button" onclick="calcularMediana()">Mediana</button>
+                <h3>Esta es tu respuesta</h3>
+                <input type="text" readonly id="inputRespuesta">
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../main.js"></script>
+</body>
+
+</html>
