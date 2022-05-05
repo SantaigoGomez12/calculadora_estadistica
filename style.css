@@ -8,3 +8,15 @@
 html {
     font-size: 62.5%;
 }
+
+body {
+    background-color: #181a1b;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+}
